@@ -1,0 +1,116 @@
+/* Global styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.sidebar {
+  float: left;
+  width: 20%;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sidebar button:hover {
+  background-color: #3e8e41;
+}
+
+.main-content {
+  float: right;
+  width: 80%;
+  padding: 20px;
+}
+
+.column {
+  float: left;
+  width: 70%;
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
+
+/* Media queries */
+
+/* Small screens (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+  }
+  .main-content {
+    width: 100%;
+    padding: 10px;
+  }
+  .column {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Medium screens (max-width: 992px) */
+@media only screen and (max-width: 992px) {
+  .sidebar {
+    width: 30%;
+    padding: 15px;
+  }
+  .main-content {
+    width: 70%;
+    padding: 15px;
+  }
+  .column {
+    width: 80%;
+    padding: 15px;
+  }
+}
+
+/* Large screens (max-width: 1200px) */
+@media only screen and (max-width: 1200px) {
+  .sidebar {
+    width: 25%;
+    padding: 20px;
+  }
+  .main-content {
+    width: 75%;
+    padding: 20px;
+  }
+  .column {
+    width: 90%;
+    padding: 20px;
+  }
+}
