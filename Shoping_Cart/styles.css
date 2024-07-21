@@ -1,0 +1,139 @@
+body 
+{
+  background-color: rgb(245, 245, 245) ;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.cardImage 
+{
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.cardImage:hover {
+    transform: scale(1.1); /* scale up the image on hover */
+}
+
+#main 
+{
+  display: grid;
+  grid-template-columns: repeat(4, 350px);
+  gap: 30px;
+  border-radius: 8px;
+  
+}
+
+
+#image,
+#child1 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+}
+
+#child 
+{
+    background-color:#f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin-top: 50px;
+  margin-left: 30px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cart {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial , sans-serif;
+}
+.cart:hover {
+    background-color: #3e8e41;
+}
+
+#btn {
+    width: 100%; 
+    text-align: center;
+    margin-top: 20px; 
+  }
+  
+  #btn button {
+    height: 40px;
+    width: 120px;
+    background-color: rgb(91, 196, 165); 
+    color: #fff;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block; 
+  }
+
+#search-bar 
+{
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#searchInput
+ {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  width: 2300px;
+  margin-right: 10px; 
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+#searchButton 
+{
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+#searchButton:hover 
+{
+  background-color: #218838;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+  }
+  #cart-btn {
+    margin-right: 20px;
+  }
